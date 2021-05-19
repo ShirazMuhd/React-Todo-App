@@ -1,8 +1,11 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './App.css';
 
 function Todo() {
-  const day=new Date().getDate()
+  
+  const [toDos, setTodos] = useState([])
+  const [toDo, setTodo] = useState('')
+
   return (
     <div className="app">
       <div className="mainHeading">
