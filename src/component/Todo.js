@@ -12,8 +12,8 @@ function Todo() {
         <h1>ToDo List</h1>
       </div>
       <div className="input">
-        <input  onChange={(e) => setTodo(e.target.value)} type="text" placeholder="🖊️ Add item..." />
-        <i onClick={() => setTodos([...toDos, toDo])} className="fas fa-plus"></i>
+        <input onChange={(e) => setTodo(e.target.value)} type="text" placeholder="🖊️ Add item..." />
+        <i onClick={() => setTodos([...toDos, {id:Date.now() ,text: toDo, status: false }])} className="fas fa-plus"></i>
       </div>
       <div className="todos">
         {
@@ -21,8 +21,10 @@ function Todo() {
             return (
               <div className="todo">
                 <div className="left">
-                  <input type="checkbox" name="" id="" />
-                  <p>{value}</p>
+                  <input onChange={(e)=>{
+                    
+                  }} value={value.status} type="checkbox" name="" id="" />
+                  <p>{value.text}</p>
                 </div>
                 <div className="right">
                   <i className="fas fa-times"></i>
