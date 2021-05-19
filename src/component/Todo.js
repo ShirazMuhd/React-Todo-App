@@ -13,7 +13,7 @@ function Todo() {
       </div>
       <div className="input">
         <input onChange={(e) => setTodo(e.target.value)} type="text" placeholder="🖊️ Add item..." />
-        <i onClick={() => setTodos([...toDos, {id:Date.now() ,text: toDo, status: false }])} className="fas fa-plus"></i>
+        <i onClick={() => setTodos([...toDos, { id: Date.now(), text: toDo, status: false }])} className="fas fa-plus"></i>
       </div>
       <div className="todos">
         {
@@ -21,12 +21,12 @@ function Todo() {
             return (
               <div className="todo">
                 <div className="left">
-                  <input onChange={(e)=>{
+                  <input onChange={(e) => {
                     console.log(e.target.checked);
                     console.log(dataObject);
-                    setTodos(toDos.filter(obj2=>{
-                      if(obj2.id===dataObject.id){
-                        obj2.status=e.target.checked;
+                    setTodos(toDos.filter(obj2 => {
+                      if (obj2.id === dataObject.id) {
+                        obj2.status = e.target.checked;
                       }
                       return obj2;
                     }))
@@ -41,9 +41,9 @@ function Todo() {
           })
         }
         {
-          toDos.map((object)=>{
-            if(object.status){
-              return(
+          toDos.map((object) => {
+            if (object.status) {
+              return (
                 <h1>{object.text}</h1>
               )
             }
