@@ -1,11 +1,12 @@
-import React from 'react'
+import React from 'react';
+import Todo from './component/Todo'
 
 function App() {
-  return (
-    <div>
-      
-    </div>
-  )
+    return (
+        <React.Fragment>
+            <Todo />
+        </React.Fragment>
+    )
 }
 
 export default App
