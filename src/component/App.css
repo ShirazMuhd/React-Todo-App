@@ -23,10 +23,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 1rem;
   }
   
   .app .input {
-    margin-top: 0.8em;
+    margin-top: 1em;
     width: 20em;
     height: 2em;
     background-color: white;
