@@ -17,20 +17,38 @@ function Todo() {
       </div>
       <div className="todos">
         {
-          toDos.map((value) => {
+          toDos.map((dataObject) => {
             return (
               <div className="todo">
                 <div className="left">
                   <input onChange={(e)=>{
-                    
-                  }} value={value.status} type="checkbox" name="" id="" />
-                  <p>{value.text}</p>
+                    console.log(e.target.checked);
+                    console.log(dataObject);
+                    setTodos(toDos.filter(obj2=>{
+                      if(obj2.id===dataObject.id){
+                        obj2.status=e.target.checked;
+                      }
+                      return obj2;
+                    }))
+                  }} value={dataObject.status} type="checkbox" name="" id="" />
+                  <p>{dataObject.text}</p>
                 </div>
                 <div className="right">
                   <i className="fas fa-times"></i>
                 </div>
               </div>
             )
+          })
+        }
+        {
+          toDos.map((object)=>{
+            if(object.status){
+              return(
+                <h1>{object.text}</h1>
+              )
+            }
+
+            return null;
           })
         }
       </div>
