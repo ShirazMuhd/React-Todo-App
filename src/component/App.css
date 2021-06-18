@@ -8,10 +8,13 @@
     top: 10%;
     left: 50%;
     transform: translate(-50%, -10%);
+    display: flex;
+    flex-direction: row;
   }
-  
   .app .mainHeading h1 {
     text-align: center;
+    font-weight: lighter;
+    letter-spacing: 5px;
   }
   
   .app h1,
@@ -23,14 +26,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
   
   .app .input {
     margin-top: 1em;
     width: 20em;
     height: 2em;
-    background-color: white;
+    background-color: #72757e;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,13 +46,19 @@
     height: 1.6em;
     border-color: transparent;
     outline-color: transparent;
+    background-color: #72757e;
+    outline: none;
+    color: #f2f2f2;
+    font-size: 18px;
   }
-  
+  .app .input input::placeholder{
+    color: #f2f2f2;
+  }
   .app i {
     cursor: pointer;
     font-size: larger;
     font-weight: 900;
-    color: grey;
+    color: #f2f2f2;
     margin-right: 5px;
   }
   .app .todos {
@@ -63,7 +72,7 @@
     margin-top: 0.8em;
     width: 20em;
     height: 2em;
-    background-color: white;
+    background-color: #7f5af0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -81,5 +90,5 @@
     font-size: medium;
     font-weight: 700;
     font-style: normal;
-    color: grey;
+    color: #fffffe;
   }
