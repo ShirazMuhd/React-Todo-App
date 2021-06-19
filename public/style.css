@@ -2,3 +2,8 @@ body{
     background-color: #004643;
     font-family: sans-serif;
 }
+#root{
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
