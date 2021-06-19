@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# TODO app with React js
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is done for [Crossroads](https://www.youtube.com/c/Crossroadstalk/featured) youtube channel 
+React js Tutorial 
 
 ## Available Scripts
 
